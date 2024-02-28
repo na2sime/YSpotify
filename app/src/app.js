@@ -33,5 +33,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use("/api/auth", require("./routes/auth.route"));
 app.use("/api/spotify", require("./routes/spotify.route"));
 app.use("/api/user", require("./routes/user.route"));
+app.use("/api/teams", require("./routes/teams.route"));
 
 module.exports = app;

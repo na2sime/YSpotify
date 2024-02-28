@@ -14,6 +14,7 @@ const userSchema = new mongoose.Schema({
     spotifyTokenExpires: {type: Date, required: true},
     spotifyId: requiredStringSchema(true),
     spotifyDisplayName: requiredStringSchema(true),
+    teams: {type: mongoose.Schema.Types.ObjectId, ref: "Team"},
 });
 
 userSchema.plugin(uniqueValidator);
