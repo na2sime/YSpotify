@@ -1,0 +1,17 @@
+{
+  "name": "yspotify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docker compose up -d --build",
+    "stop": "docker compose down",
+    "logs": "docker compose logs -f",
+    "restart": "docker compose down && docker compose up -d --build",
+    "rebuild": "docker compose up -d --build",
+    "clean": "docker compose down --rmi all --volumes --remove-orphans"
+  },
+  "author": "ABDIOU Nassime",
+  "license": "ISC"
+}
